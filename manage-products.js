@@ -19,7 +19,7 @@ const subtractQuantityInProduct = async (productId, quantity) => {
     {
       _id: productId,
     },
-    { $inc: { quantity: -2 } }
+    { $inc: { quantity: -quantity } }
   );
 
   return product;
